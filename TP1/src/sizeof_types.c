@@ -1,32 +1,53 @@
 #include <stdio.h>
+#include <string.h>
 
-int main() {
-    printf("Tailles des types de base en C (en octets) :\n\n");
+int main(){
+  
+  char var_char;
+  unsigned char var_char_unsigned;
+  
+  short var_short;
+  unsigned short var_short_unsigned;
+  
+  int var_int;
+  unsigned int var_int_unsigned;
+  
+  long int var_long_int;
+  unsigned long int var_long_int_unsigned;
+  
+  long long int var_long_long_int;
+  unsigned long long int var_long_long_int_unsigned;
+  
+  float var_float;
+  double var_double;
+  long double var_long_double;
 
-    // Types caractères
-    printf("char (signed)        : %zu octet(s)\n", sizeof(signed char));
-    printf("char (unsigned)      : %zu octet(s)\n", sizeof(unsigned char));
+  printf("var char size : %zu octet(s)\n" ,sizeof(var_char));
+  printf("var char unsigned size : %zu octet(s)\n" ,sizeof(var_char_unsigned));
+  
+  printf("var short size : %zu octet(s)\n" ,sizeof(var_short));
+  printf("var short unsigned size : %zu octet(s)\n" ,sizeof(var_short_unsigned));
+  
+  printf("var int size : %zu octet(s)\n" ,sizeof(var_int));
+  printf("var int unsigned size : %zu octet(s)\n" ,sizeof(var_int_unsigned));
+  
+  printf("var long int size : %zu octet(s)\n" ,sizeof(var_long_int));
+  printf("var long int unsigned size : %zu octet(s)\n" ,sizeof(var_long_int_unsigned));
+  
+  printf("var long long int size : %zu octet(s)\n" ,sizeof(var_long_long_int));
+  printf("var long long int unsigned size : %zu octet(s)\n" ,sizeof(var_long_long_int_unsigned));
+  
+  printf("var float size : %zu octet(s)\n" ,sizeof(var_float));
+  printf("var double size : %zu octet(s)\n" ,sizeof(var_double));
+  printf("var long size : %zu octet(s)\n" ,sizeof(var_long_double));
+  
+  
 
-    // Types entiers courts
-    printf("short (signed)       : %zu octet(s)\n", sizeof(signed short));
-    printf("short (unsigned)     : %zu octet(s)\n", sizeof(unsigned short));
 
-    // Types entiers
-    printf("int (signed)         : %zu octet(s)\n", sizeof(signed int));
-    printf("int (unsigned)       : %zu octet(s)\n", sizeof(unsigned int));
-
-    // Types long
-    printf("long int (signed)    : %zu octet(s)\n", sizeof(signed long int));
-    printf("long int (unsigned)  : %zu octet(s)\n", sizeof(unsigned long int));
-
-    // Types long long
-    printf("long long (signed)   : %zu octet(s)\n", sizeof(signed long long int));
-    printf("long long (unsigned) : %zu octet(s)\n", sizeof(unsigned long long int));
-
-    // Types à virgule flottante
-    printf("float                : %zu octet(s)\n", sizeof(float));
-    printf("double               : %zu octet(s)\n", sizeof(double));
-    printf("long double          : %zu octet(s)\n", sizeof(long double));
-
-    return 0;
+  
 }
+
+
+
+
+
